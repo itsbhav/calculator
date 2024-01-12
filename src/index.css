@@ -1,13 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+#root {
+  display: flex;
+  justify-content: center;
+  background-color: #8c8b8b;
+  min-height: 100vh;
+}
+.App {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+  min-height: 75vh;
+  max-width: 30vw;
+  border: 2px solid;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0);
+  border-radius: 1rem;
+}
+.wide-mode {
+  min-width: 60vw;
+}
+.screen label {
+  position: fixed;
+  left: -999999999px;
+}
 
+.screen .input {
+  /* margin-top: 2px; */
+  width: 100%;
+  font-weight: bold;
+  font-size: large;
+  height: calc(0.25 * 75vh);
+  padding: 1rem;
+  margin-bottom: 10px;
+  border-radius: 1rem;
+  text-align: right;
+  direction: ltr;
+}
+
+.BtnContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.BtnContainer button,
+.button {
+  font-size: 1.5rem;
+  margin: 0.25rem;
+  padding: 0.5rem;
+  min-width: 5rem;
+  min-height: 2.6rem;
+  border-radius: 1rem;
+}
+.button {
+  background-color: white;
+}
+.NavContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+button:hover,
+.icon:hover,
+.button:hover {
+  background-color: aqua;
+  color: blue;
+}
+.NavContainer button,
+.icon {
+  font-size: 1rem;
+  margin: 0.25rem;
+  padding: 0.5rem;
+  min-width: 5rem;
+  min-height: 2.6rem;
+  border-radius: 1rem;
+}
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.History {
+  min-height: 48vh;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.History .icon {
+  position: fixed;
+  bottom: 0px;
+  left: 45%;
+}
+
+@media screen and (max-width: 576px) {
+  .App {
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+  .screen .input {
+    height: 4rem;
+    margin-bottom: 1rem;
+    text-align: right;
+    direction: ltr;
+  }
+  .wide-mode .BtnContainer button,
+  .button {
+    font-size: 1rem;
+    margin: 4px;
+    padding: 8px;
+    min-width: 2rem;
+    min-height: 3rem;
+    border-radius: 0.8rem;
+  }
+  .NavContainer button,
+  .icon {
+    font-size: 1rem;
+    margin: 8px;
+    padding: 0.5rem;
+    min-width: 2rem;
+    min-height: 4rem;
+    border-radius: 0.8rem;
+  }
+  .History {
+    min-height: 48vh;
+  }
+
+  .History .icon {
+    position: fixed;
+    left: 33vw;
+  }
 }
