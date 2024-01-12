@@ -62,7 +62,7 @@ Input from the keyboard is also disabled to mitigate injection of harmful code t
 
 
 ### `History Stack`
-The history of aclculations are stored in History Stack in Local Storage and a function to clear historyu is also available.
+The history of calculations are stored in History Stack in Local Storage and a function to clear historyu is also available.
 
 ### `Feedback`
 The project is open for public use and any feedback to improve are most welcome.
