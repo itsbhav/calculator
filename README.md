@@ -6,6 +6,7 @@ The Deployed project is available on [link](https://itsbhav.github.io/calculator
 ### `npm start`
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You should (run npm i .) first, because repo does not contain node_modules
 
 The page will reload when you make changes.
 
