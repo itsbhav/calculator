@@ -17,8 +17,8 @@ The project has functions normal
 2. Subtract
 3. Multiply
 4. Divide
-5.  Percentage
-functions for Normal Calculator.\
+5.  Percentage\
+functions for Normal Calculator.
 
 
 However, its scientific mode has functions such as 
