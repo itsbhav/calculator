@@ -34,7 +34,7 @@ export const DataProvider = ({ children }) => {
   );
 
   // useStates
-  const [mode, setMode] = useState(false);
+  const [mode, setMode] = useState(true);
   const [page1, setPage1] = useState(true);
   const [history, setHistory] = useState(false);
   const [val, setVal] = useState("");
